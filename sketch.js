@@ -2,7 +2,6 @@ let mySong;
 let myImage;
 let myImage2;
 let myImage4;
-let myImage5;
 
 function preload() {
   //preload materials and links
