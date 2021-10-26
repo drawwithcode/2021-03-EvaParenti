@@ -1,17 +1,14 @@
+let mySong;
 let myImage;
 let myImage2;
 let myImage4;
-let myImage5;
-let mySong;
 
 function preload() {
   //preload materials and links
-
+  mySong = loadSound("../libraries/wolf.mp3");
   myImage = loadImage("./assets/fantasy.jpg"); //specify postion of image according to inex html
   myImage2 = loadImage("./assets/knife.png");
   myImage4 = loadImage("./assets/fire.gif");
-
-  mySong = loadSound("../libraries/wolf.mp3");
 }
 
 function setup() {
@@ -37,14 +34,14 @@ function draw() {
   textFont("Zen Old Mincho");
   fill("white");
   text("Missing tradition?", windowWidth / 2, windowHeight / 3);
-  text("escape from wolf if you can", windowWidth / 2, windowHeight / 2);
+  text("escape from wolves if you can", windowWidth / 2, windowHeight / 2);
+
   if (mouseX > width / 7) {
     if (mySong.isPlaying() === false) {
       //if is not
 
       mySong.loop(); //inizia e finisce dove si è interrotta
-      mySong.setVolume(0.2);
-      //  mySong.play();
+      //mySong.setVolume(0.2);
     }
   } else {
     mySong.pause();
