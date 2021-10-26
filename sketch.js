@@ -35,7 +35,7 @@ function draw() {
   textFont("Zen Old Mincho");
   fill("white");
   text("Missing tradition?", windowWidth / 2, windowHeight / 3);
-  text("escape from wolf if you can", windowWidth / 2, windowHeight / 2);
+  text("escape from wolves if you can", windowWidth / 2, windowHeight / 2);
 
   if (mouseX > width / 7) {
     if (mySong.isPlaying() === false) {
