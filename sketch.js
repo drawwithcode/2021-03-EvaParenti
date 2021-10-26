@@ -1,6 +1,5 @@
 let myImage;
 let myImage2;
-let myImage3;
 let myImage4;
 let myImage5;
 let mySong;
@@ -10,9 +9,8 @@ function preload() {
 
   myImage = loadImage("./assets/fantasy.jpg"); //specify postion of image according to inex html
   myImage2 = loadImage("./assets/knife.png");
-  myImage3 = loadImage("./assets/anfora.png");
   myImage4 = loadImage("./assets/fire.gif");
-  myImage5 = loadImage("./assets/star.png");
+
   mySong = loadSound("../libraries/wolf.mp3");
 }
 
@@ -24,37 +22,7 @@ function setup() {
 
 function draw() {
   backgroundImage(myImage);
-  /*push();
-  //rotate(frameCount, 200, 50);
-  image(
-    myImage3,
-    frameCount * 3,
-    height / 7,
-    myImage3.width / 4,
-    myImage3.height / 4
-  );
-  pop();
 
-  push();
-  translate(120, 178, 90);
-  image(
-    myImage5,
-    frameCount * 3,
-    frameCount,
-    myImage3.width / 4,
-    myImage3.height / 4
-  );
-  image(
-    myImage5,
-    frameCount * 3,
-    frameCount,
-    myImage3.width / 4,
-    myImage3.height / 4
-  );
-  pop();
-*/
-  push();
-  rotate();
   image(
     myImage4,
     width / 40,
@@ -62,9 +30,7 @@ function draw() {
     myImage.width / 10,
     myImage.height / 10
   );
-  pop();
 
-  pop();
   image(myImage2, mouseX, mouseY, myImage.width / 12, myImage.height / 12);
   textSize(20);
   textAlign(CENTER);
