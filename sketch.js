@@ -5,7 +5,7 @@ let myImage4;
 
 function preload() {
   //preload materials and links
-  mySong = loadSound("./libraries/wolf.mp3");
+  mySong = loadSound("../libraries/wolf.mp3");
   myImage = loadImage("./assets/fantasy.jpg"); //specify postion of image according to inex html
   myImage2 = loadImage("./assets/knife.png");
   myImage4 = loadImage("./assets/fire.gif");
